@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-utama">
+        <div class="side"></div>
+        <header>
+            <nav>
+                <ul>
+                    <div class="burger-menu">
+                        <input type="checkbox" id="menu-toggle" name="menu-toggle">
+                        <label for="menu-toggle" class="menu-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="menu" id="menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="video.html">Add Recipe</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </div>
+                    <div class="list-login">
+                        <li><a href="#"><img src="./assets/icon.png"></a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-container1">
+            <aside class="main-side1-1">
+                <div class="main-side1-content">
+                    <div class="discover">
+                        <h1 id="discover">Discover Recipe<br>& Delicious Food</h1>
+                    </div>
+                    <input type="text" class="search" placeholder="Search Restaurant, Food">
+                </div>
+            </aside>
+            <aside class="main-side2-1">
+                <a href="details.html">
+                    <img src="./assets/image1.png" alt="Image1">
+                </a>
+            </aside>
+        </div>
+        <div class="container">
+            <aside class="main-side1-2">
+                <div class="foryou">
+                    <div class="line"></div>
+                    <h2>Popular For You !</h2>
+                </div>
+                <div class="circle"> 
+                    <div class="circle1">
+                        <div class="circle-round"></div>
+                        <div class="circle-round"></div>
+                        <div class="circle-round"></div>
+                    </div>
+                    <div class="circle2">
+                        <div class="circle-round"></div>
+                        <div class="circle-round"></div>
+                        <div class="circle-round"></div>
+                    </div>
+                </div>
+                <div class="cube"></div>
+                <div class="image2-cover">
+                    <div class="image2">
+                        <img src="./assets/image2.png" alt="Image2">
+                    </div>
+                </div>
+            </aside>
+            <aside class="main-side2-2">
+                <div class="contain">
+                    <h2>Healthy Bone Broth <br>Ramen (Quick & Easy)</h2>
+                    <hr>
+                    <h5>Quick + Easy Chicken Bone Broth Ramen- <br>Healthy chicken ramen in a hurry? That’s right!</h5>
+                    <button class="btnmore">Learn More</button>
+                </div>
+            </aside>
+        </div>
+        <div class="container">
+            <aside class="main-side1-3">
+                <div class="newrecipe">
+                    <div class="line"></div>
+                    <h2>New Recipe</h2>
+                </div>
+                <div class="rectangle"></div>
+                <div class="image3-cover">
+                    <div class="image3">
+                        <img src="./assets/image3.png" alt="Image3">
+                    </div>
+                </div>
+            </aside>
+            <aside class="main-side2-3">
+                <div class="contain">
+                    <h2>Healthy Bone Broth <br>Ramen (Quick & Easy)</h2>
+                    <hr>
+                    <h5>Quick + Easy Chicken Bone Broth Ramen- <br>Healthy chicken ramen in a hurry? That’s right!</h5>
+                    <button class="btnmore">Learn More</button>
+                </div>
+            </aside>
+        </div>
+        <div class="main-container4">
+            <div class="popularrecipe">
+                <div class="line"></div>
+                <h2>Popular Recipe</h2>
+            </div>
+            <div class="fill">
+                <!-- <div class="carousel"> -->
+                    <div class="item">Chiken<br>Kare</div>
+                    <div class="item">Bomb<br>Chicken</div>
+                    <div class="item">Banana<br>Smothie Pop</div>
+                    <div class="item">Coffe Lava<br>Cake</div>
+                    <div class="item">Sugar<br>Salmon</div>
+                    <div class="item">Indian<br>Salad</div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="main-container5">
+            <div class="wrapper">
+                <h1>Eat, Cook, Repeat</h1>
+                <h5>Share your best recipe by uploading here !</h5>
+            </div>
+            <div class="foot">
+                <h6>Product</h6>
+                <h6>Company</h6>
+                <h6>Learn More</h6>
+                <h6>Get In Touch</h6>
+            </div>
+        </div>
+    </div>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", function() {
+            menu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

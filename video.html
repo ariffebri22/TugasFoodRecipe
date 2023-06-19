@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-utama">
+        <div class="container-video">
+            <div class="side-video"></div>
+            <header>
+                <nav>
+                    <ul>
+                        <div class="burger-menu">
+                            <input type="checkbox" id="menu-toggle" name="menu-toggle">
+                            <label for="menu-toggle" class="menu-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="menu" id="menu">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="video.html" class="active">Add Recipe</a></li>
+                            <li><a href="#">Profile</a></li>
+                        </div>
+                        <div class="list-login hidden">
+                            <li><a href="#"><img src="./assets/icon.png"></a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+            <div class="video-container">
+                <div class="video-fill">
+                    <div class="video-side1">
+                        <div class="video-image13">
+                            <img src="./assets/play.png" alt="play">
+                        </div>
+                        <div class="video-image-caption">
+                            <h3><strong>Beef Steak with Curry Sauce - [Step 4]<br>
+                                Cut the condiment and then mix it</strong></h3>
+                        </div>
+                        <div class="video-image-time">
+                            <h6>3 month ago</h6>
+                        </div>
+                    </div>
+                    <div class="video-side2">
+                        <h3><strong>Next</strong></h3>
+                        <div class="video-list1">
+                            <img src="./assets/video-list1.svg" alt="Video-List1">
+                            <h5>Beef Steak with Curry Sauce - [Step 5]<br>
+                                Saute condiments together until turn brown</h5>
+                            <h6>HanaLohana - 3 month ago</h6>
+                        </div>
+                        <div class="video-list2">
+                            <img src="./assets/video-list2.svg" alt="Video-List1">
+                            <h5>Beef Steak with Curry Sauce - [Step 6]<br>
+                                Roast beef until it’s medium rare</h5>
+                            <h6>HanaLohana - 3 month ago</h6>
+                        </div>
+                        <div class="video-list3">
+                            <img src="./assets/video-list2.svg" alt="Video-List1">
+                            <h5>Beef Steak with Curry Sauce - [Step 7]<br>
+                                Roast beef until it’s medium rare</h5>
+                            <h6>HanaLohana - 3 month ago</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", function() {
+            menu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
